@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"code.cloudfoundry.org/batching"
+	"code.cloudfoundry.org/go-batching"
 )
 
 var _ = Describe("ByteBatcher", func() {

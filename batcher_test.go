@@ -3,7 +3,7 @@ package batching_test
 import (
 	"time"
 
-	"code.cloudfoundry.org/batching"
+	"code.cloudfoundry.org/go-batching"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

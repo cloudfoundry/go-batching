@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"code.cloudfoundry.org/batching"
+	"code.cloudfoundry.org/go-batching"
 )
 
 func ExampleByteBatcher() {
