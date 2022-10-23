@@ -1,6 +1,6 @@
 module code.cloudfoundry.org/go-batching
 
-go 1.18
+go 1.19
 
 require (
 	github.com/onsi/ginkgo/v2 v2.1.3
