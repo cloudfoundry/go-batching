@@ -7,13 +7,13 @@ import (
 	"code.cloudfoundry.org/go-batching"
 )
 
-func ExampleByteBatcher() {
-	writer := batching.ByteWriterFunc(func(batch [][]byte) {
+func ExampleBatcher() {
+	writer := batching.WriterFunc[[]byte, [][]byte](func(batch [][]byte) {
 		for _, data := range batch {
 			fmt.Printf("%s\n", data)
 		}
 	})
-	batcher := batching.NewByteBatcher(100, time.Nanosecond, writer)
+	batcher := batching.NewBatcher(100, time.Nanosecond, writer)
 
 	dataSource := make(chan []byte)
 	done := make(chan struct{})
